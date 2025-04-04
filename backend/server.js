@@ -1,22 +1,16 @@
 require('dotenv').config();
 const express = require('express');
-const mongoose = require("mongoose")
-const admin = require("firebase-admin");
+const connectDB = require('./config/db')
+const subscribersRouter = require('./routes/subscribers');
+const usersRouter = require('./routes/users')
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGODB_URI)
-    .then(() => {
-      console.log("Connected to the database")
-      app.listen(port, () => {
-          console.log(`Server is running on http://localhost:${port}`);
-      });
-    })
-    .catch(() =>{
-      console.log("Connection failed")
-    })
+connectDB(app, port);
+app.use(express.json()); // Middleware to parse JSON -> code that runs when server gets a request, but before it gets passed to routes
+app.use('/users', usersRouter);
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
