@@ -24,8 +24,8 @@ exports.getUser = async (req, res) => {
 
 exports.createUser = async (req, res) => {
     try {
-        const {username, email, password, profilePicture} = req.body;
-        const user = new User({username, email, password, profilePicture});
+        const {username, email, password, uid, profilePicture} = req.body;
+        const user = new User({username, email, password, uid, profilePicture});
         await user.save();
         res.status(201).json(user);
 
@@ -69,7 +69,7 @@ exports.deleteUser = async (req, res) => {
             return res.status(400).json({message: err.message});
         }
         await user.deleteOne();
-        res.json({message: "User deleted"});
+        res.json({message: "User successfully deleted"});
 
     } catch(err) {
         res.status(500).json({message: err.message});
