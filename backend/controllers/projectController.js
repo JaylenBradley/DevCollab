@@ -19,11 +19,11 @@ exports.getProjects = async (req, res) => {
 
         const projects = await Project.find(filter)
             .skip(skip)
-            .limit(limit)
+            .limit(limit);
         
         const totalPages = Math.ceil(totalDocs / limit);
 
-        res.status(201).json({
+        res.status(200).json({
             data: projects,
             pagination: {
                 totalDocs,
