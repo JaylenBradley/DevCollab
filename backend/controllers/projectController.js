@@ -1,10 +1,41 @@
 const Project = require('../models/project');
 
 exports.getProjects = async (req, res) => {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 15;
+    const skip = (page - 1) * limit;
+
     try {
-        const project = await Project.find();
-        res.json(project);
-    } catch(err) {
+
+        const filter = {};
+
+        if (req.query.type) {
+            filter.type = req.query.type;
+        }
+        if (req.query.status) {
+            filter.status = req.query.status;
+        }
+        const totalDocs = await Project.countDocuments(filter);
+
+        const projects = await Project.find(filter)
+            .skip(skip)
+            .limit(limit)
+        
+        const totalPages = Math.ceil(totalDocs / limit);
+
+        res.status(201).json({
+            data: projects,
+            pagination: {
+                totalDocs,
+                limit,
+                page,
+                totalPages,
+                hasNextPage: page < totalPages,
+                hasPrevPage: page > 1
+            },
+            filters: filter 
+        });
+    } catch (err) {
         res.status(500).json({message: err.message});
     }
 };
