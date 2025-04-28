@@ -17,10 +17,9 @@ const userSchema = new mongoose.Schema({
     uid: {
         type: String,
         required: true,
-        unique: true
     },
     profilePicture: {
-        type: Buffer,
+        type: String,
         required: false,
         default: null
     }

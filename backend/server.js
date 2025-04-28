@@ -3,8 +3,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const usersRouter = require('./routes/users');
 const projectsRouter = require('./routes/projects');
-const applicationsRouter = require('./router/applications');
-
+const applicationsRouter = require('./routes/applications');
 const app = express();
 const port = process.env.PORT || 3000;
 
