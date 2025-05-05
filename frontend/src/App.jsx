@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx'
-import AuthForm from './containers/form.jsx';
+import AuthForm from "./containers/form.jsx";
 import { getAuth } from 'firebase/auth';
 
 const App = () => {
