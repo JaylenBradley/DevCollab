@@ -26,7 +26,7 @@ const applicationSchema = new mongoose.Schema({
     }
 });
 
-// Creating a coumpound index and ensuring each user can apply to a project once and once only
+// Creating a compound index and ensuring each user can apply to a project once and once only
 applicationSchema.index({ project: 1, applicant: 1}, { unique: true});
 
 module.exports = mongoose.model('Application', applicationSchema);

@@ -31,7 +31,8 @@ const projectSchema = new mongoose.Schema({
     },
     teamMembers: [{
         type: String,
-        ref: 'User'
+        ref: 'User',
+        required: false
     }],
 });
 

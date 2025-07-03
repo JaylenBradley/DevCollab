@@ -1,12 +1,12 @@
 require('dotenv').config();
 const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 const cors = require('cors');
 const connectDB = require('./config/db');
 const usersRouter = require('./routes/users');
 const projectsRouter = require('./routes/projects');
 const applicationsRouter = require('./routes/applications');
-const app = express();
-const port = process.env.PORT || 3000;
 
 // Enable CORS for localhost
 app.use(cors({
