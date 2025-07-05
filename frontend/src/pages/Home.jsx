@@ -1,7 +1,15 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import NavBar from "../components/NavBar.jsx";
+import Footer from "../components/Footer.jsx";
+
 const Home = () => {
+    const navigate = useNavigate();
+
     return (
-        <div className="text-3xl text-center text-green-600 font-extrabold p-4">
-          Welcome to the Tailwind CSS Integration Demo!
+        <div className="min-h-screen flex flex-col justify-between">
+            <NavBar/>
+            <Footer/>
         </div>
     );
 };

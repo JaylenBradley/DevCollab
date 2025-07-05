@@ -1,2 +1,35 @@
 @import "tailwindcss";
 
+:root {
+  --bg-main-gradient: linear-gradient(
+    to right,
+    #873ae1 0%,
+    #6D3EDF 50%,
+    #5742DB 120%
+  );
+}
+
+body {
+  background-color: #0E0F1A;
+}
+
+.bg-main-gradient {
+  background: var(--bg-main-gradient)
+}
+
+.text-gradient {
+  background: var(--bg-main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-default {
+  background: var(--bg-main-gradient);
+  color: whitesmoke;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 9999px;
+}

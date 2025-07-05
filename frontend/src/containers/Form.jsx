@@ -21,16 +21,27 @@ const AuthForm = ({ isSignUp }) => {
         if (isSignUp) {
             if (username.length < 5) {
                 errors.push('Username must be at least 5 characters');
-                return;
+
+            } if (!/[A-Z]/.test(password)) {
+                errors.push('Password must contain an upper case character');
+
+            } if (!/[^a-zA-Z0-9]/.test(password)) {
+                errors.push('Password must contain a non-alphanumeric character');
+
             } if (password.length < 6) {
                 errors.push('Password must be at least 6 characters');
-                return;
+
             } if (password !== confirmedPassword) {
                 errors.push('Passwords do not match');
-                return;
+
+            } if (/\s/.test(username)) {
+                errors.push('Username must not contain spaces');
+
+            } if (/\s/.test(password)) {
+                errors.push('Password must not contain spaces');
+
             } if (!email.includes('@')) {
                 errors.push('Please enter a valid email address');
-                return;
             }
 
             if (errors.length > 0) {
@@ -47,7 +58,8 @@ const AuthForm = ({ isSignUp }) => {
                   uid: firebaseUser.uid,
                   username: username,
                   email: firebaseUser.email,
-                  password: password
+                  password: password,
+                  signinMethod: 'email'
                 };
 
                 const createdUser = await createUser(userData);
@@ -82,6 +94,7 @@ const AuthForm = ({ isSignUp }) => {
               username: derivedUsername,
               email: firebaseUser.email,
               password: "google-oauth-placeholder", // Placeholder password
+              signinMethod: 'google'
             };
 
             const createdUser = await createUser(userData);

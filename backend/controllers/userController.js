@@ -43,8 +43,8 @@ exports.getUser = async (req, res) => {
 
 exports.createUser = async (req, res) => {
     try {
-        const {uid, username, email, password, profilePicture} = req.body;
-        const user = new User({uid, username, email, password, profilePicture});
+        const {uid, username, email, password, signinMethod, profilePicture} = req.body;
+        const user = new User({uid, username, email, password, signinMethod, profilePicture});
         await user.save();
         res.status(201).json(user);
 
@@ -68,6 +68,9 @@ exports.updateUser = async (req, res) => {
         }
         if (req.body.password != null) {
             user.password = req.body.password;
+        }
+        if (req.body.signinMethod != null) {
+            user.signinMethod = req.body.signinMethod;
         }
         if (req.body.profilePicture != null) {
             user.profilePicture = req.body.profilePicture;
