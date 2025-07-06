@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72e2f11a-06b2-446b-9290-d1779dbeeda9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JaylenBradley&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JaylenBradley/DevCollab.git&quot;,
+    &quot;accountId&quot;: &quot;d110e1b4-5918-43ca-a26a-fd94299b67af&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/frontend/src/pages/Home.jsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2uQdWRrsGykk1usfIfYfXjRxyC9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jaylen/dev&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jaylen/Developer/Projects/DevCollab/frontend/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/jaylen/Library/Application Support/JetBrains/PyCharm2024.3/node/versions/22.14.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/PyCharm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/images" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72e2f11a-06b2-446b-9290-d1779dbeeda9" name="Changes" comment="" />
+      <created>1742184762508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742184762508</updated>
+      <workItem from="1742184764082" duration="136000" />
+      <workItem from="1742184908501" duration="6000" />
+      <workItem from="1742184925631" duration="758000" />
+      <workItem from="1742258729525" duration="80000" />
+      <workItem from="1742778310574" duration="9959000" />
+      <workItem from="1743136913974" duration="1299000" />
+      <workItem from="1743214941505" duration="7925000" />
+      <workItem from="1743391010200" duration="2471000" />
+      <workItem from="1743734137703" duration="4243000" />
+      <workItem from="1743819682497" duration="49000" />
+      <workItem from="1743819782810" duration="6034000" />
+      <workItem from="1743826269900" duration="37000" />
+      <workItem from="1743893034380" duration="2000" />
+      <workItem from="1743893038915" duration="5000" />
+      <workItem from="1744228843128" duration="87000" />
+      <workItem from="1744230610147" duration="6000" />
+      <workItem from="1744346213073" duration="3000" />
+      <workItem from="1745647816398" duration="5000" />
+      <workItem from="1745704891876" duration="2981000" />
+      <workItem from="1745871211807" duration="306000" />
+      <workItem from="1745890943785" duration="46000" />
+      <workItem from="1745965511039" duration="670000" />
+      <workItem from="1745980929027" duration="2386000" />
+      <workItem from="1745984198110" duration="2692000" />
+      <workItem from="1745987078074" duration="1172000" />
+      <workItem from="1746041988106" duration="1000" />
+      <workItem from="1746073289469" duration="1752000" />
+      <workItem from="1746077711506" duration="1620000" />
+      <workItem from="1746420700295" duration="249000" />
+      <workItem from="1746420955570" duration="5168000" />
+      <workItem from="1750293545001" duration="373000" />
+      <workItem from="1750293963481" duration="10799000" />
+      <workItem from="1750305662316" duration="1736000" />
+      <workItem from="1750476741877" duration="1707000" />
+      <workItem from="1750478647747" duration="585000" />
+      <workItem from="1750479301387" duration="6000" />
+      <workItem from="1750479332395" duration="15000" />
+      <workItem from="1750479365301" duration="232000" />
+      <workItem from="1750479630342" duration="3817000" />
+      <workItem from="1750483880125" duration="20000" />
+      <workItem from="1750484010078" duration="33000" />
+      <workItem from="1750484199691" duration="2000" />
+      <workItem from="1750484282775" duration="28000" />
+      <workItem from="1750538345152" duration="4862000" />
+      <workItem from="1751504775615" duration="7065000" />
+      <workItem from="1751748773752" duration="4901000" />
+      <workItem from="1751753791422" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+</project>
